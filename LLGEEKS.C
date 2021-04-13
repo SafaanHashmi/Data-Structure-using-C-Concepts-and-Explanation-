@@ -1,6 +1,11 @@
-// forming a link list by connecting different pointer objects
-//and doing DMA for eah point obj(first,second,third) rather than for next
-//But next is used to connect them.
+//Data Structure Concepts Using C Lang. by Safaan Hashmi
+//Explanation of how link list are made manually using structures and pointers.
+
+// Another method of forming a link listmanually by simply connecting different
+// pointer objects and doing DMA for eah point obj(first,second,third) rather 
+// than for next.
+// But next is used to connect them.
+
 #include<stdio.h>
 #include<conio.h>
 #include<alloc.h>
@@ -30,6 +35,7 @@ void main()
 
 
   printf("Data -: \n First = %d\t Second= %d\t Third= %d",first->roll,secon->roll,third->roll);
+  printf("\n\nHope you understood the concept.   --Safaan Hashmi");
   getch();
 
 }
