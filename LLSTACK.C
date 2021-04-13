@@ -1,3 +1,6 @@
+//Data Structure Concepts Using C Lang. by Safaan Hashmi
+//Explanation of how link list are made with application of Stack (Last In First Out)
+
 //PREVIOUS PROG = LINLIST3.C
 //Here we form a LinkList with application of stack
 #include<stdio.h>
@@ -71,6 +74,7 @@ void main()
 	printf("Invalid Input");
     }
   }
+  printf("\n\nHope you understod the concept well.   --Safaan Hashmi")
   getch();
 }
 
