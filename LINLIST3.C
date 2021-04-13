@@ -1,3 +1,6 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of how link list are made manually using structures and pointers
+
 // Before this goto LINLIST2.C
 //Similar to LINLIST2 but with an additional
 //entry of name.
@@ -20,39 +23,32 @@ void main()
   clrscr();
   p=(struct std*)malloc(sizeof(struct std));
 
-/* ab jo roll input lene ka kaam hai vo apan
-   is function me daal dete hai */
+
   creat(p);
   printf("\nRoll\tName\n");
   print(p);
+  printf("Hope you understood the concept. --Safaan Hashmi");
   getch();
 }
 
-void creat(struct std *s) //*s jo hai vo p se equate ho gya
+void creat(struct std *s) 
 {
   printf("Enter Roll= ");
-  scanf("%d",&s->roll); //s->roll likha kyuki func ke ander p ka kaam s kar rha hai
+  scanf("%d",&s->roll); 
 
   printf("Enter Name= ");
-  scanf("\n%[^\n]",&s->name); //s->roll likha kyuki func ke ander p ka kaam s kar rha hai
+  scanf("\n%[^\n]",&s->name); 
 
-  /*Ab 'next' ka dma karne ke liye
-   apan recurssion ki madat lenge */
 
-   if(s->roll==0)   //Agar input 0 mila to
+
+   if(s->roll==0) 
    {
-    s->next=NULL;  //s->next me Null assign hoga
+    s->next=NULL;  //s->next  Null assign 
    }
-   else            //else 'next' ka DMA kar dega
+   else            //else DMA for 'next'  
    {
      s->next=(struct std*)malloc(sizeof(struct std));
      creat(s->next);
-
-      //Recurssion kara
-      /*ab creat func call kara magar pass kara hai
-      s->next matlab s ki jagah jayega s->next jis
-      kaaran scanf me jayega s->next->roll ,Aise hi
-      next turn par s ho jaega s->next->next.*/
    }
 }
 
