@@ -1,10 +1,13 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of how link list are made manually using structures and pointers
+
 #include<stdio.h>
 #include<conio.h>
 #include<alloc.h>
 struct std
 {
   int roll;
-  struct std *next;    //*next is a pointer object which can also be seen as a nested structure
+  struct std *next;    //*next is a pointer object
 };
 
 void main()
@@ -27,7 +30,7 @@ void main()
    //now this block also has 2 variables i.e. roll and *next
    //Now we can make one more entry in the roll of next(i.e. new block)
 
-  //to take input for roll no.
+  //To take input for roll no.
   printf("Enter roll no : ");
   scanf("%d",&p->next->roll);
   // the input will be given to variable roll
@@ -41,16 +44,16 @@ void main()
   //it aso have 2 variables roll and next
   //we will take input for roll
 
-  //to take input for roll no.
+  //To take input for roll no.
   printf("Enter roll no : ");
   scanf("%d",&p->next->next->roll);
 
-  //IN this way we formed a link list which
+  //In this way we formed a link list which
   // is capable of holding 3 entries
-  //we can increase it further according to
-  //our will i.e. p->next->next->next->next...
 
   printf("Enteries are -:\n");
   printf("%d\n%d\n%d\n",p->roll,p->next->roll,p->next->next->roll);
   getch();
 }
+
+//Hope you understood the concept. --Safaan Hashmi
