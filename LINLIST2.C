@@ -1,3 +1,6 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of how link list are made manually using structures and pointers
+
 // Before this goto LINKLISV.C
 // As in previous program we have seen that
 // we have to keep on adding ->next->next to
@@ -5,9 +8,6 @@
 // inappropriate to do this at the compile time
 // So here we use a function which add 1 ->next
 // each time with the help of recurssion.
-
-//MORE explaination regarding the scope of variables
-//in LINK2EXP.C
 
 #include<stdio.h>
 #include<conio.h>
@@ -29,25 +29,24 @@ void main()
 
   p=(struct std*)malloc(sizeof(struct std));
 
-  /* ab jo roll input lene ka kaam hai vo apan
-  is function me daal dete hai */
   creat(p);
 
-  /* After the completion of print funct. the the p is already set
+  /* After the completion of print funct. the p is already set
      to the first node while the entries is inserted with the help
      of formal variable s.   */
 
   print(p);
+  printf("Hope you understood the concept --Safaan Hashmi");
   getch();
 }
 
-void creat(struct std *s)   //*s jo hai vo p se equate ho gya
+void creat(struct std *s)  
 {
   printf("Enter Roll= ");
   scanf("%d",&s->roll); //s->roll likha kyuki func ke ander p ka kaam s kar rha hai
 
-  /*Ab 'next' ka dma karne ke liye
-   apan recurssion ki madat lenge */
+  /* Now we will do DMA of next with the 
+  help of recurssion */
 
    if(s->roll==0)   //Agar input 0 mila to
    {
@@ -57,12 +56,6 @@ void creat(struct std *s)   //*s jo hai vo p se equate ho gya
    {
      s->next=(struct std*)malloc(sizeof(struct std));
      creat(s->next);
-
-      //Recurssion kara
-      /*ab creat func call kara magar pass kara hai
-      s->next matlab s ki jagah jayega s->next jis
-      kaaran scanf me jayega s->next->roll ,Aise hi
-      next turn par s ho jaega s->next->next.*/
    }
 }
 
