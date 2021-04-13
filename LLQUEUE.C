@@ -1,3 +1,6 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of how link list are made with application of Queue (First In First Out)
+
 //PREVIOUS PROG = LLSTACK.C
 //Here we form a LinkList with application of queue
 #include<conio.h>
@@ -89,6 +92,7 @@ void main()
 	  printf("Invalid Input");
     }
   }
+  printf("\n\nHope you understood the concept.   --Safaan Hashmi");
   getch();
 }
 
