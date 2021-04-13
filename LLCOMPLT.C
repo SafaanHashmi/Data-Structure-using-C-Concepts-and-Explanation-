@@ -1,3 +1,6 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of various operations on Link List using structures and pointers
+
 #include<stdio.h>
 #include<conio.h>
 #include<alloc.h>
@@ -42,6 +45,7 @@ void main()
 	  printf("Invalid Input");
      }
    }
+   printf("Hope you understood the concept. --Safaan Hashmi");
    getch();
 }
 
