@@ -1,6 +1,9 @@
+//Data Structure Concepts Using C Lang. by Safaan
+//Explanation of how link list are made manually using structures and pointers
+
 //Before this goto LINKLIST.C
-//THis program has one more entry of name
-// i.e. both roll and name
+//THis program has one more entry of variable within structure i.e. 'name'
+
 
 #include<stdio.h>
 #include<conio.h>
@@ -9,7 +12,7 @@ struct std
 {
   int roll;
   char name[20];
-  struct std *next;    //*next is a pointer object which can also be seen as a nested structure
+  struct std *next;    //*next is a pointer object 
 };
 
 void main()
@@ -65,5 +68,8 @@ void main()
 
   printf("\nEnteries are -:\n\n");
   printf("Roll\tName \n%d\t%s\n%d\t%s\n%d\t%s\n",p->roll,p->name,p->next->roll,p->next->name,p->next->next->roll,p->next->next->name);
+  printf("\n\n Hope you understood the concept --Safaan Hashmi");
   getch();
 }
+
+//Hope you understood the concept --Safaan Hashmi
